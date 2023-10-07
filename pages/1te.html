@@ -32,7 +32,89 @@
       header {
         background-color: pink;
       }
+
+      .header-container {
+        text-align: centre;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        color: darkcyan;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      ul li {
+        display: inline-block;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      @media (min-width: 600px) {
+        .header-container {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+        h1 {
+          margin-bottom: 0;
+        }
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container header-container">
+        <h1>Tech Educators: 201</h1>
+        <nav>
+          <ul>
+            <li><a href="*">Home</a></li>
+            <li><a href="*">About</a></li>
+            <li><a href="*">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-container container"></div>
+    </main>
+    <footer>
+      <div class="footer-container container"></div>
+    </footer>
+    <script>
+      console.log("I can confirm that this has logged.");
+
+      let user;
+      let myFavColor;
+      let color;
+
+      alert("Hi, I'm Lee, thanks for the visit :)");
+
+      function userName() {
+        user = prompt("Please tell me your name so we can get to know one another.");
+        alert("Welcome to my site " + user);
+        console.log(user);
+      }
+
+      function favColor() {
+        colour = prompt(user + " , what is your favorite colour?").toLocaleLowerCase();
+        console.log(color);
+
+        if (color === "red") {
+          myFavColor = "green";
+        } else if (color === "blue") {
+          myFavColor = "orange";
+        } else {
+          myFavColor = "Tomato";
+        }
+        alert("Nice, " + " is a great colour. My favourite colour is " + myFavColor);
+      }
+
+      favColor();
+    </script>
+  </body>
 </html>
