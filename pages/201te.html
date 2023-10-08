@@ -96,27 +96,38 @@
 
       function userName() {
         user = prompt("Please tell me your name so we can get to know one another.");
-        alert("Welcome to my site " + user);
+        alert("Welcome to my site " + user + ".");
         console.log(user);
       }
 
       userName();
 
-      function favColor() {
-        colour = prompt(user + " , what is your favorite colour?").toLocaleLowerCase();
-        console.log(color);
+      // function favColor() {
+      //   color = prompt(user + ", what is your favorite colour?").toLocaleLowerCase();
+      //   console.log(color);
 
-        if (color === "red") {
-          myFavColor = "green";
-        } else if (color === "blue") {
-          myFavColor = "orange";
-        } else {
-          myFavColor = "Tomato";
+      //   if (color === "red") {
+      //     myFavColor = "green";
+      //   } else if (color === "blue") {
+      //     myFavColor = "orange";
+      //   } else {
+      //     myFavColor = "Tomato";
+      //   }
+      //   alert("Nice, " + color + " is a great colour. My favourite colour is " + myFavColor + ".");
+      // }
+
+      // favColor();
+
+        let clanName;
+        let clan;
+        let faction;
+        let reply;
+
+        function kindredClan(){
+            clanName = prompt ("Ok " +user+" who's favorite colour is " +color+ ", what is your REAL name?");
+            console.log(clanName);
         }
-        alert("Nice, " + " is a great colour. My favourite colour is " + myFavColor);
-      }
 
-      favColor();
     </script>
   </body>
 </html>
