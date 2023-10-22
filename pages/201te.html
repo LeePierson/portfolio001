@@ -118,16 +118,45 @@
 
       // favColor();
 
-        let clanName;
-        let clan;
-        let faction;
-        let reply;
+      let clanName;
+      let clan;
+      let faction;
+      let reply;
 
-        function kindredClan(){
-            clanName = prompt ("Ok " +user+" who's favorite colour is " +color+ ", what is your REAL name?");
-            console.log(clanName);
+      function kindredName() {
+        clanName = prompt("Ok " + user + " who's favorite colour is " + color + ", what is your REAL name?");
+        console.log(clanName);
+      }
+
+      kindredName();
+
+      function info() {
+        clan = prompt(
+          "That sounds more like it. Ok " + clanName + " , are you a Ventrue, Tremere, Toreador, Brujah or one of the others?"
+        ).toLocaleLowerCase();
+
+        if (clan === "Ventrue") {
+          myClan = "you're all arrogant buggers.";
+        } else if (clan === "toreador") {
+          myClan = "you're all stuck up buggers.";
+        } else if (clan === "tremere") {
+          myClan = "you can all be spooky buggers";
+        } else if (clan === "brujah") {
+          myClan = "you're all argumentative buggers.";
+        } else {
+          myClan = "I'm Nosferatu";
         }
 
+        alert("Welcome to Elysium clan " + clan + ", everyone already knows " + myClan + ", as if you didn't know. We're fuggly buggers.");
+      }
+
+      alert("Welcome to Elysium clan " + clan + ", everyone already knows " + myClan + ", just in case you couldn't tell.");
+
+      info();
+
+      function factionName() {
+        faction = prompt("")
+      }
     </script>
   </body>
 </html>
