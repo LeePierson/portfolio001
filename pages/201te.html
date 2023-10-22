@@ -102,21 +102,21 @@
 
       userName();
 
-      // function favColor() {
-      //   color = prompt(user + ", what is your favorite colour?").toLocaleLowerCase();
-      //   console.log(color);
+      function favColor() {
+        color = prompt(user + ", what is your favorite colour?").toLocaleLowerCase();
+        console.log(color);
 
-      //   if (color === "red") {
-      //     myFavColor = "green";
-      //   } else if (color === "blue") {
-      //     myFavColor = "orange";
-      //   } else {
-      //     myFavColor = "Tomato";
-      //   }
-      //   alert("Nice, " + color + " is a great colour. My favourite colour is " + myFavColor + ".");
-      // }
+        if (color === "red") {
+          myFavColor = "green";
+        } else if (color === "blue") {
+          myFavColor = "orange";
+        } else {
+          myFavColor = "Tomato";
+        }
+        alert("Nice, " + color + " is a great colour. My favourite colour is " + myFavColor + ".");
+      }
 
-      // favColor();
+      favColor();
 
       let clanName;
       let clan;
@@ -155,7 +155,15 @@
       info();
 
       function factionName() {
-        faction = prompt("")
+        faction = prompt("now lastly " + clanName + ", are you with the Camarilla, the Anarch or something else?").toLocaleLowerCase();
+
+        if (faction === "camarilla") {
+          reply = "Remember this is neutral ground, bit of fun for everyone who follows the rules.";
+        } else if (faction === "anarch") {
+          reply = "Still pretending you're not the Cam with different but equally pretencious naming schemes? How is the Baron?";
+        } else {
+          reply = "Elysium or not, it's bloody dangerious for you to be here. If I were you " + user + " I'd keep my that to my self.";
+        }
       }
     </script>
   </body>
